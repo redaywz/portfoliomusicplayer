@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio com Player de Música</title>
+  </head>
+  <body class="bg-black w-screen h-screen">
+    <nav class="border-b border-[#1f1f1f] mb-[32px]">
+      <ul class="flex gap-[2rem] h-[8vh] items-center justify-center">
+        <li>
+          <a href="#" class="text-white p-[1rem] hover:opacity-80">Home</a>
+        </li>
+        <li>
+          <a href="#" class="text-white p-[1rem] hover:opacity-80"
+            >Experiências</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-white p-[1rem] hover:opacity-80">Contato</a>
+        </li>
+        <button
+          class="flex items-center justify-center bg-white text-black border border-transparent px-[1rem] py-[5px] h-[40px] rounded-md cursor-pointer font-semibold hover:bg-black hover:text-white hover:border-white duration-300"
+        >
+          Contrate me!
+        </button>
+      </ul>
+    </nav>
+    <section class="flex flex-col justify-center items-center">
+      <div class="h-[450px] w-[450px] mb-[12px]">
+        <img
+          src="./img/itachi.jpg"
+          alt="Itachi pfp"
+          class="w-full h-full object-cover rounded-[50%] hover:rotate-[360deg] duration-[2s]"
+        />
+      </div>
+      <h1 class="text-white text-[64px] font-semibold group">
+        Olá, Me chamo
+        <span
+          class="font-bold text-purple-500 duration-[.7s] group-hover:text-blue-500"
+          >Victor!</span
+        >
+        🕵️
+      </h1>
+      <p class="text-center text-[#a6a6a6] w-[780px]">
+        Desde pequeno, fui apaixonado por tecnologia. Acredito na força do
+        trabalho em equipe, pois juntos podemos criar algo melhor e mais
+        significativo. Sempre busco crescer com cada desafio e contribuir com
+        soluções que fazem a diferença. Atualmente, tenho 15 anos, e estou
+        sempre procurando a aperfeiçoar as minhas habilidades em programação e
+        tecnologia em geral.
+      </p>
+    </section>
+    <section class="flex justify-center items-center mt-[32px] h-[64px]">
+      <audio src="/audio/fallingdown.mp3" id="audio" autoplay></audio>
+      <div
+        class="bg-white p-[.6rem] rounded-md flex flex-col items-center justify-center"
+      >
+        <p class="">Falling Down - Lil Peep</p>
+        <div>
+          <button class="" id="pause-btn">
+            <i class="bx bx-pause text-black text-[32px]" id="play-icon"></i>
+          </button>
+          <button class="" id="stop-btn">
+            <i class="bx bx-stop text-black text-[32px]" id="stop-icon"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
